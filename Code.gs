@@ -85,7 +85,7 @@ function stalkMarket() {
   
   bestProfit = bestSale - bestPrice;
   
-  if(bestProfit > -1000) {
+  if(bestProfit > -1000 && bestSale > 0) {
     bestProfit = bestSale - bestPrice;  
     results = "The largest profit that could be made per turnip was " + bestProfit + " Bells";
   } else {
